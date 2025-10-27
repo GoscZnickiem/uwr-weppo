@@ -9,11 +9,7 @@ if (typeof performance !== 'undefined') {
 function fibIt(n) {
 	var a = 0;
 	var b = 1;
-	for(;n > 0; n--) {
-		const c = a + b;
-		a = b;
-		b = c;
-	}
+	for(;n > 0; n--) [a, b] = [b, a + b];
 	return a;
 }
 
