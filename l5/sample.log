@@ -1,0 +1,11 @@
+08:55:36 311.431.2.1 GET /TheApplication/WebResource.axd 200
+08:55:37 432.425.5.1 SET /something/idk.ee 302
+08:55:39 555.333.0.0 GET /balls 600
+08:55:39 555.333.0.0 GET /balls2 600
+08:55:39 555.333.0.0 GET /balls3 0
+08:55:40 8.8.8.8 GET /something/else/entirely.exe 200
+08:55:45 15.16.23.42 SET /0 492
+08:55:46 15.16.23.42 SET /0 492
+08:55:50 6.6.6.1 GET /h 500
+08:55:45 12.34.56.7 SET /aaaaaa 1
+09:00:11 12.34.56.7 GET /aaaaaa 2
