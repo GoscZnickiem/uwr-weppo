@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Wydruk zgłoszenia</title>
+	</head>
+	<body>
+		<h2>Pasek zgłoszenia zadań</h2>
+
+		<p><strong>Imię:</strong> {{firstName}}</p>
+		<p><strong>Nazwisko:</strong> {{lastName}}</p>
+		<p><strong>Zajęcia:</strong> {{course}}</p>
+
+		<table border="1" cellpadding="5" style="border-collapse: collapse; margin-top: 20px;">
+			<tr>
+				<th>Zadanie</th>
+				<th>Punkty</th>
+			</tr>
+
+			{{rows}}
+		</table>
+
+		<br><br>
+		<a href="/">Powrót</a>
+	</body>
+</html>

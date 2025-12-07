@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Formularz zgłoszenia</title>
+	</head>
+	<body>
+		<h2>Formularz zgłoszenia zadań</h2>
+
+		<p style="color:red">{{error}}</p>
+
+		<form method="POST" action="/submit">
+			<label>Imię: <input type="text" name="firstName"></label><br>
+			<label>Nazwisko: <input type="text" name="lastName"></label><br>
+			<label>Nazwa zajęć: <input type="text" name="course"></label><br><br>
+
+			<h3>Punkty za zadania (10 zadań):</h3>
+
+			<!-- 10 pól -->
+			<script>
+				for (let i = 1; i <= 10; i++) {
+					document.write(`Zadanie ${i}: <input type="number" name="task${i}"><br>`);
+				}
+			</script>
+
+			<br>
+			<button type="submit">Wyślij</button>
+		</form>
+	</body>
+</html>
