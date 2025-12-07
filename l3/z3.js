@@ -1,6 +1,6 @@
 function createFs(n) { // tworzy tablicę n funkcji
 	var fs = []; // i-ta funkcja z tablicy ma zwrócić i
-	for ( let i=0; i<n; i++ ) {
+	for ( var i=0; i<n; i++ ) {
 		fs[i] =
 			function() {
 				return i;
