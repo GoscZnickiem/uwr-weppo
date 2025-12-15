@@ -1,0 +1,12 @@
+<% options.forEach(option => { %>
+	<label>
+		<input
+			type="radio"
+			name="<%= name %>"
+			value="<%= option %>"
+			<%= option === selected ? 'checked' : '' %>
+		>
+		<%= option %>
+	</label>
+	<br>
+<% }) %>

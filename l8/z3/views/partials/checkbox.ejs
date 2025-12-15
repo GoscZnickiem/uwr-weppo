@@ -1,0 +1,12 @@
+<% options.forEach(option => { %>
+	<label>
+		<input
+			type="checkbox"
+			name="<%= name %>[]"
+			value="<%= option %>"
+			<%= selected.includes(option) ? 'checked' : '' %>
+		>
+		<%= option %>
+	</label>
+	<br>
+<% }) %>

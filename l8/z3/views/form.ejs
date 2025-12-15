@@ -1,0 +1,24 @@
+<h2>Fill the form</h2>
+
+<% if (error) { %>
+	<p style="color:red"><%= error %></p>
+<% } %>
+
+<form method="POST">
+
+	<h3>Who are you?</h3>
+	<%- include('partials/radio', {
+		name: 'role',
+		options: ['student', 'teacher', 'other'],
+		selected: null
+	}) %>
+
+	<h3>Which programming languages do you know?</h3>
+	<%- include('partials/checkbox', {
+		name: 'languages',
+		options: ['JS', 'TS', 'Python', 'C', 'C++', 'Java', 'Spanish'],
+		selected: []
+	}) %>
+
+	<button type="submit">Submit</button>
+</form>
